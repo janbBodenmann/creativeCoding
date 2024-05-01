@@ -1,7 +1,7 @@
 var angle;
 var axiom = "X";
 var sentence = axiom;
-var len = 100;
+var len = 200;
 
 var rules = [];
 rules[0] = {
@@ -12,6 +12,8 @@ rules[1] = {
   a: "F",
   b: "FF"
 };
+
+var button;
 
 function generate() {
   len *= 0.5;
@@ -39,22 +41,26 @@ function turtle() {
   background(51);
   resetMatrix();
   translate(width / 2, height);
-  stroke(255, 100);
+  
   for (var i = 0; i < sentence.length; i++) {
     var current = sentence.charAt(i);
     if (current == "F") {
       line(0, 0, 0, -len);
       translate(0, -len);
     } else if (current == "-") {
-      rotate(angle);
+      rotate(angle), stroke(50,79,79);
     } else if (current == "+") {
-      rotate(-angle);
+      rotate(-angle), stroke(185,211,238);
     } else if (current == "[") {
-      push();
+      push(), stroke(151,255,255);
     } else if (current == "]") {
-      pop();
+      pop(), stroke(141,238,238);
     }
   }
+}
+
+function mousePressed(){
+    
 }
 
 function setup() {
@@ -63,6 +69,22 @@ function setup() {
   background(51);
   createP(axiom);
   turtle();
-  var button = createButton("generate");
+ 
+  
+
+  button = createButton("Generate");
+  button.position(width/2 - button.width/2, height/2 + 100);
   button.mousePressed(generate);
+  
+
+  button.style('background-color', '#4CAF50');
+  button.style('border', 'none');
+  button.style('color', 'white');
+  button.style('padding', '15px 32px');
+  button.style('text-align', 'center');
+  button.style('text-decoration', 'none');
+  button.style('display', 'inline-block');
+  button.style('font-size', '16px');
+  button.style('margin', '4px 2px');
+  button.style('cursor', 'pointer');
 }

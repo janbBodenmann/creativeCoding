@@ -7,7 +7,9 @@ var rules = [];
 rules[0] = {
   a: "F",
   b: "FF+[+F-F-F]-[-F+F+F]"
-}
+};
+
+var button;
 
 function generate() {
   len *= 0.5;
@@ -29,7 +31,6 @@ function generate() {
   sentence = nextSentence;
   createP(sentence);
   turtle();
-
 }
 
 function turtle() {
@@ -46,7 +47,7 @@ function turtle() {
     } else if (current == "+") {
       rotate(angle);
     } else if (current == "-") {
-      rotate(-angle)
+      rotate(-angle);
     } else if (current == "[") {
       push();
     } else if (current == "]") {
@@ -61,6 +62,21 @@ function setup() {
   background(51);
   createP(axiom);
   turtle();
-  var button = createButton("generate");
+  
+ 
+  button = createButton("Generate");
+  button.position(width/2 - button.width/2, height/2 + 100);
   button.mousePressed(generate);
+  
+
+  button.style('background-color', '#4CAF50');
+  button.style('border', 'none');
+  button.style('color', 'white');
+  button.style('padding', '15px 32px');
+  button.style('text-align', 'center');
+  button.style('text-decoration', 'none');
+  button.style('display', 'inline-block');
+  button.style('font-size', '16px');
+  button.style('margin', '4px 2px');
+  button.style('cursor', 'pointer');
 }
