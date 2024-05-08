@@ -1,7 +1,7 @@
 let textArray; 
 let wordsArray = []; 
 let markovChain = {}; 
-let order = 10; 
+let order = 1; 
 
 function preload() {
 
@@ -29,5 +29,5 @@ function setup() {
     markovChain[gram].push(nextWord);
   }
   
-  console.log(markovChain);
+//   console.log(markovChain);
 }
