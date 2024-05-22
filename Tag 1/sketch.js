@@ -1,5 +1,6 @@
 function setup() {
-  createCanvas(500, 500);
+ let cnv = createCanvas(500, 500);
+ cnv.position(550,100);
   background("gray");
   noFill();
   drawSquares();
