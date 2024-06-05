@@ -7,7 +7,7 @@ var maxSlider;
 
 
 function setup() {
-  createCanvas(100, 100);
+  createCanvas(300, 300);
   pixelDensity(1);
 
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);
@@ -16,7 +16,7 @@ function setup() {
 
 
 function draw() {
-  var maxiterations = 100;
+  var maxiterations = 50;
   loadPixels();
   for (var x = 0; x < width; x++) {
     for (var y = 0; y < height; y++) {
