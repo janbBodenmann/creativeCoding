@@ -61,7 +61,7 @@ function setup() {
   imageMode(CENTER);
 
   glitch = new Glitch();
-  setupGlitch(); // load image with random type
+  setupGlitch(); 
 }
 
 function draw() {
@@ -69,8 +69,8 @@ function draw() {
     glitch.resetBytes();
     glitch.randomBytes(10); // Erhöhen der Anzahl von zufälligen Bytes
     glitch.buildImage(() => {
-      background(0); // clear background once image is ready
-      displayType(); // show text
+      background(0); 
+      displayType(); 
     });
     image(glitch.image, width / 2, height / 2);
   }
@@ -78,12 +78,12 @@ function draw() {
 
 function mousePressed() {
   typeCounter++;
-  setupGlitch(); // grab another random format
+  setupGlitch(); 
 }
 
 function setupGlitch() {
   loadImage('../m4.jpg', (im) => {
-    glitch.loadType(glitch.types[typeCounter % glitch.types.length]); // use random type
+    glitch.loadType(glitch.types[typeCounter % glitch.types.length]); 
     glitch.loadImage(im);
   });
 }

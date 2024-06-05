@@ -2,7 +2,8 @@ let number = 10;
 let sizeSlider; 
 
 function setup() {
-  createCanvas(400, 400);
+  cnv = createCanvas(400, 400);
+  cnv.position(550, 100);
   background(40, 30, 93);
 
 

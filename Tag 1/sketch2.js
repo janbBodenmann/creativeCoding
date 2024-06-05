@@ -3,7 +3,7 @@ let sizeSlider;
 
 function setup() {
  let cnv = createCanvas(720, 620);
- cnv.position(410,100);
+ cnv.position(600,300);
   pixelDensity(1);
 
   

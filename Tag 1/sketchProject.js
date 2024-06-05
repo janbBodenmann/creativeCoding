@@ -7,7 +7,8 @@ var maxSlider;
 
 
 function setup() {
-  createCanvas(300, 300);
+  cnv = createCanvas(300, 300);
+  cnv.position(620, 100);
   pixelDensity(1);
 
   minSlider = createSlider(-2.5, 0, -2.5, 0.01);

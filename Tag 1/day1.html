@@ -3,8 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day 1</title>
+    <title>Welcome Page</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      h1 {
+        color: #333;
+        margin-top: 20px;
+      }
+      .tasks a {
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .tasks a:hover {
+        background-color: #45a049;
+      }
+      #sketch1Container {
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -19,24 +69,13 @@
         <li><a href="project.html">Project</a></li>
       </ul>
     </nav>
-    <h1>Day 1</h1>
-
-    <a href="./tasks/task1.1.html">Task 1</a>
-    <a href="./tasks/task1.2.html">Task 2
-
-    </a>
+    <h1>Welcome to the Course!</h1>
+    <p>This is my day 2 projects!</p>
+    <div class="tasks">
+      <a href="./tasks/task1.1.html">Task 1</a>
+      <a href="./tasks/task1.2.html">Task 2</a>
+    </div>
     <div id="sketch1Container"></div>
-
-   
- 
-   
-   
-  
- 
-   
-
-
-
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
     <script src="libraries/quicksettings.js"></script>

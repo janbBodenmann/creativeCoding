@@ -8,7 +8,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1000, 1000);
+  cnv = createCanvas(1000, 1000);
+  cnv.position(600, 300)
   pixelDensity(1);
   background(0, 0, 0, 0);
   image(img, 0 , 0, 0, 0);

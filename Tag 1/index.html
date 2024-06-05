@@ -3,8 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sketch</title>
+  <title>Welcome Page</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      color: #333;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -17,16 +56,15 @@
       <li><a href="day5.html">Day 5</a></li>
       <li><a href="day6.html">Day 6</a></li>
       <li><a href="project.html">Project</a></li>
-      <script src="welcome.js"></script>
-      
     </ul>
   </nav>
   <h1>Welcome!</h1>
+  <p>Click the window or resize the slider to see the effect.</p>
 
   <script src="welcome.js"></script>
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script src="libraries/quicksettings.js"></script>
+  <script src="libraries/p5.gui.js"></script>
 </body>
-<script src="libraries/p5.min.js"></script>
-<script src="libraries/p5.sound.min.js"></script>
-<script src="libraries/quicksettings.js"></script>
-<script src="libraries/p5.gui.js"></script>
 </html>
