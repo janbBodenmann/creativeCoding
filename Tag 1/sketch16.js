@@ -7,7 +7,7 @@ let threshold = 0.5; // Schwellenwert für Zellaktivierung
 
 function setup() {
  let cnv = createCanvas(600, 400);
- cnv.position(400,100);
+ cnv.position(650,300);
   cols = floor(width / cellSize);
   rows = floor(height / cellSize);
 

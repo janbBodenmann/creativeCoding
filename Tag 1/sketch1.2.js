@@ -1,6 +1,6 @@
 function setup(){
     let cnv = createCanvas(1000, 1000);
-    cnv.position(500,200);
+    cnv.position(500,250);
     background(0, 0, 0);
     c1 = color(92, 207, 218);
     c2 = color(32, 28, 121);
